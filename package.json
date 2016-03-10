@@ -1,0 +1,23 @@
+{
+  "name": "bemo-sprites",
+  "version": "1.0.0",
+  "description": "Given a directory full of 2x images, it will generate 1x and 2x sprites and a SCSS variables file compatibile with BEMO.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "bemo",
+    "sprites"
+  ],
+  "author": "Stefano Verna",
+  "license": "ISC",
+  "dependencies": {
+    "async": "1.5.2",
+    "ejs": "2.4.1",
+    "glob": "7.0.3",
+    "lwip": "0.0.8",
+    "meow": "3.7.0",
+    "spritesmith": "3.1.0"
+  }
+}

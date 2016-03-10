@@ -1,0 +1,21 @@
+// Generated automatically via bemo-sprites, do not edit manually!
+
+$sprite-size: (
+<% if (image.width) {
+%>  width:   <%= image.width / 2 %>px,
+  height:  <%= image.height / 2 %>px
+<% } else {
+%>  width: 0px,
+  height: 0px
+<% } %>);
+
+$sprite-images: (
+<% sprites.forEach(function(sprite, index) {
+%>  <%= sprite.name %>: (
+    x:             <%= sprite.x / 2 %>px,
+    y:             <%= sprite.y / 2 %>px,
+    width:         <%= sprite.width / 2 %>px,
+    height:        <%= sprite.height / 2 %>px
+  )<%= index < sprites.length - 1 ? "," : "" %>
+<% }); %>);
+
